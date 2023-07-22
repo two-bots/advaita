@@ -1,0 +1,39 @@
+function expandDiv(element) {
+  // Get all items
+  var items = document.getElementsByClassName("hero-item");
+
+  // Remove the 'expanded' class from all items
+  for (var i = 0; i < items.length; i++) {
+    items[i].classList.remove("expanded");
+  }
+
+  // Add the 'expanded' class to the clicked item
+  element.classList.add("expanded");
+}
+
+let map;
+
+async function initMap() {
+  // The location of Uluru
+  const position = { lat: -25.344, lng: 131.031 };
+  // Request needed libraries.
+  //@ts-ignore
+  const { Map } = await google.maps.importLibrary("maps");
+  const { AdvancedMarkerElement } = await google.maps.importLibrary("marker");
+
+  // The map, centered at Uluru
+  map = new Map(document.getElementById("map"), {
+    zoom: 4,
+    center: position,
+    mapId: "DEMO_MAP_ID",
+  });
+
+  // The marker, positioned at Uluru
+  const marker = new AdvancedMarkerElement({
+    map: map,
+    position: position,
+    title: "Uluru",
+  });
+}
+
+initMap();
