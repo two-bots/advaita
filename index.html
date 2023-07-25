@@ -8,14 +8,12 @@
     <link rel="stylesheet" href="/index.css" />
     <script defer src="/index.js"></script>
   </head>
-  <body class="bg-gray-100 text-gray-800">
-    <header class="absolute inset-x-0 z-10">
-      <div
-        class="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8 flex justify-between"
-      >
-        <img src="/assets/logo.png" alt="advaita" class="h-10 object-contain" />
+  <body>
+    <header>
+      <div class="nav-wrapper">
+        <img src="/assets/logo.png" alt="advaita" />
 
-        <nav class="text-white text-xl flex gap-6 items-center">
+        <nav>
           <a href="/">Home</a>
           <a href="/about-us">about us</a>
           <a href="#contact">contact us</a>
@@ -24,228 +22,270 @@
     </header>
     <main>
       <!-- HERO Section -->
-      <section class="h-screen w-full text-white">
+      <section class="hero-section">
         <div class="flex h-full md:flex-row flex-col">
           <div class="hero-item relative expanded" onclick="expandDiv(this)">
             <div class="hero-item-overlay"></div>
-            <img
-              src="/assets/advaita-exports.jpg"
-              alt="advaita-exports"
-              class="w-full h-full object-cover"
-            />
-            <h1 class="absolute bottom-28 inset-x-0 mx-auto text-3xl">
-              Advaita Exports
-            </h1>
+
+            <img src="/assets/advaita-exports.jpg" alt="advaita-exports" />
+            <h1 class="hero-item__name">Advaita Exports</h1>
           </div>
           <div class="hero-item relative" onclick="expandDiv(this)">
             <div class="hero-item-overlay"></div>
 
-            <img
-              src="/assets/advaita-product.jpg"
-              alt="advaita-exports"
-              class="w-full h-full object-cover"
-            />
-
-            <p class="absolute bottom-28 inset-x-0 mx-auto text-3xl">Product</p>
+            <img src="/assets/advaita-product.jpg" alt="advaita-exports" />
+            <p class="hero-item__name">Product</p>
           </div>
           <div class="hero-item relative" onclick="expandDiv(this)">
             <div class="hero-item-overlay"></div>
-
-            <img
-              src="/assets/advaita-purpose.jpg"
-              alt="advaita-exports"
-              class="w-full h-full object-cover"
-            />
-
-            <p class="absolute bottom-28 inset-x-0 mx-auto text-3xl">Purpose</p>
+            <img src="/assets/advaita-purpose.jpg" alt="advaita-exports" />
+            <p class="hero-item__name">Purpose</p>
           </div>
         </div>
       </section>
 
       <!-- VIDEO Section -->
-      <section class="max-w-7xl mx-auto flex flex-col gap-10 items-center">
-        <p class="text-3xl max-w-[80%] mx-auto leading-relaxed text-center">
+      <section
+        class="max-w-7xl px-5 mx-auto flex flex-col gap-8 items-start video-section"
+      >
+        <h3 class="text-5xl font-bold">Vision</h3>
+        <p>
           At Advaita Export, we take immense pride in dealing with a wide range
           of products, including Cotton Bales, Cotton Yarn, Pulses, Spices, Agri
           Produce, and Rice, catering to the diverse needs of our valued
           clientele.
         </p>
 
-        <video
-          preload="none"
-          className="aspect-video w-full"
-          loop
-          autoplay
-          muted
-        >
+        <video preload="none" loop autoplay muted>
           <source src="/assets/advaita-video.mp4" type="video/mp4" />
           Sorry, your browser doesn&apos;t support videos.
         </video>
       </section>
 
-      <section class="max-w-7xl mx-auto flex gap-10 items-center">
-        <div class="text-2xl flex flex-col gap-6 text-gray-600 w-[30%]">
-          <div class="text-5xl font-bold text-gray-700">Contact Details</div>
-          <div>Registered office and unit 1</div>
-          <div class="text-sm text-gray-500">
-            16-17 Km. Stone Chittor Road, Hamirgarh Distt. Bhilwara - 311 025
-            (Raj.) India
-          </div>
-          <div>Unit 2</div>
-          <div class="text-sm text-gray-500">
-            Chittor-kota NH 27, Village Bhawnrian Kalan, Tehsil Begun, Distt
-            Chittorgarh (Raj.)-312 023-India
-          </div>
-
-          <hr style="height: 1px; background-color: #b6b6b6; border: none" />
-
-          <div class="flex gap-8 items-start">
-            <div class="">
-              <div class="py-2">Call Us</div>
-              <div class="text-sm text-gray-500">Phone: 91-1482-286110-113</div>
-              <div class="text-sm text-gray-500">FAX: 91-1482-286117</div>
+      <section
+        style="clip-path: polygon(100% 0, 100% 83%, 0 100%, 0 10%)"
+        class="w-full bg-gray-200 text-gray-800 py-24"
+      >
+        <div class="max-w-7xl px-5 mx-auto flex gap-10 items-center">
+          <div class="text-2xl flex flex-col gap-6 w-[30%]">
+            <div class="text-5xl font-bold">Visit Us At</div>
+            <div class="text-base">
+              WeWORK Forum, Cyber City, DLF Phase 3, Sector 24 Gurugram, 122001
             </div>
 
-            <div class="">
-              <div class="py-2">Email</div>
-              <div class="text-sm text-gray-500">nsl@nitinspinners.com</div>
-              <div class="text-sm text-gray-500">yarns@nitinspinners.co</div>
+            <hr style="height: 1px; background-color: #b6b6b6; border: none" />
+
+            <div class="flex gap-8 items-start">
+              <div class="">
+                <div class="py-2">Call Us</div>
+                <div class="text-sm">Phone: 999-999-9999</div>
+              </div>
+
+              <div class="">
+                <div class="py-2">Email</div>
+                <div class="text-sm">test@test.com</div>
+              </div>
             </div>
           </div>
+          <div class="" id="map"></div>
         </div>
-        <div class="" id="map"></div>
       </section>
 
       <!-- PRODUCTS Section -->
-      <section class="max-w-7xl mx-auto grid grid-cols-4 text-white">
-        <div class="relative aspect-square group overflow-hidden">
-          <img
-            src="/assets/products/cotton-bales.png"
-            class="w-full h-full object-cover group-hover:scale-110 transition-all"
-            alt="cotton-bales"
-          />
+      <section class="max-w-7xl px-5 mx-auto flex flex-col gap-8 items-start">
+        <h3 class="text-5xl font-bold">Flagship Products</h3>
 
-          <div
-            class="absolute bg-gradient-to-t from-black to-transparent h-40 inset-x-0 bottom-0"
-          ></div>
-          <p
-            class="max-w-[60%] absolute inset-x-0 p-7 bottom-0 font-light text-2xl"
-          >
-            Cotton Bales
-          </p>
-        </div>
-        <div class="relative aspect-square group overflow-hidden">
-          <img
-            src="/assets/products/cotton-yarn.png"
-            class="w-full h-full object-cover group-hover:scale-110 transition-all"
-            alt="cotton-yarn"
-          />
+        <div class="grid grid-cols-4 text-white">
+          <div class="relative aspect-square group overflow-hidden">
+            <img
+              src="/assets/products/cotton-bales.png"
+              class="w-full h-full object-cover group-hover:scale-110 transition-all"
+              alt="cotton-bales"
+            />
 
-          <div
-            class="absolute bg-gradient-to-t from-black to-transparent h-40 inset-x-0 bottom-0"
-          ></div>
-          <p
-            class="max-w-[60%] absolute inset-x-0 p-7 bottom-0 font-light text-2xl"
-          >
-            Cotton Yarn
-          </p>
-        </div>
-        <div class="relative aspect-square group overflow-hidden">
-          <img
-            src="/assets/products/pulses.png"
-            class="w-full h-full object-cover group-hover:scale-110 transition-all"
-            alt="pulses"
-          />
+            <div
+              class="absolute bg-gradient-to-t from-black to-transparent h-40 inset-x-0 bottom-0"
+            ></div>
+            <p
+              class="max-w-[60%] absolute inset-x-0 p-7 bottom-0 font-light text-2xl"
+            >
+              Cotton Bales
+            </p>
+          </div>
+          <div class="relative aspect-square group overflow-hidden">
+            <img
+              src="/assets/products/cotton-yarn.png"
+              class="w-full h-full object-cover group-hover:scale-110 transition-all"
+              alt="cotton-yarn"
+            />
 
-          <div
-            class="absolute bg-gradient-to-t from-black to-transparent h-40 inset-x-0 bottom-0"
-          ></div>
-          <p
-            class="max-w-[60%] absolute inset-x-0 p-7 bottom-0 font-light text-2xl"
-          >
-            Pulses
-          </p>
-        </div>
-        <div class="relative aspect-square group overflow-hidden">
-          <img
-            src="/assets/products/cotton-seed-oil.png"
-            class="w-full h-full object-cover group-hover:scale-110 transition-all"
-            alt="cotton-seed-oil"
-          />
+            <div
+              class="absolute bg-gradient-to-t from-black to-transparent h-40 inset-x-0 bottom-0"
+            ></div>
+            <p
+              class="max-w-[60%] absolute inset-x-0 p-7 bottom-0 font-light text-2xl"
+            >
+              Cotton Yarn
+            </p>
+          </div>
+          <div class="relative aspect-square group overflow-hidden">
+            <img
+              src="/assets/products/pulses.png"
+              class="w-full h-full object-cover group-hover:scale-110 transition-all"
+              alt="pulses"
+            />
 
-          <div
-            class="absolute bg-gradient-to-t from-black to-transparent h-40 inset-x-0 bottom-0"
-          ></div>
-          <p
-            class="max-w-[60%] absolute inset-x-0 p-7 bottom-0 font-light text-2xl"
-          >
-            Cotton Seed Oil
-          </p>
-        </div>
-        <div class="relative aspect-square group overflow-hidden">
-          <img
-            src="/assets/products/spices.png"
-            class="w-full h-full object-cover group-hover:scale-110 transition-all"
-            alt="spices"
-          />
+            <div
+              class="absolute bg-gradient-to-t from-black to-transparent h-40 inset-x-0 bottom-0"
+            ></div>
+            <p
+              class="max-w-[60%] absolute inset-x-0 p-7 bottom-0 font-light text-2xl"
+            >
+              Pulses
+            </p>
+          </div>
+          <div class="relative aspect-square group overflow-hidden">
+            <img
+              src="/assets/products/cotton-seed-oil.png"
+              class="w-full h-full object-cover group-hover:scale-110 transition-all"
+              alt="cotton-seed-oil"
+            />
 
-          <div
-            class="absolute bg-gradient-to-t from-black to-transparent h-40 inset-x-0 bottom-0"
-          ></div>
-          <p
-            class="max-w-[60%] absolute inset-x-0 p-7 bottom-0 font-light text-2xl"
-          >
-            Spices
-          </p>
-        </div>
-        <div class="relative aspect-square group overflow-hidden">
-          <img
-            src="/assets/products/agri-produce.png"
-            class="w-full h-full object-cover group-hover:scale-110 transition-all"
-            alt="agri-produce"
-          />
+            <div
+              class="absolute bg-gradient-to-t from-black to-transparent h-40 inset-x-0 bottom-0"
+            ></div>
+            <p
+              class="max-w-[60%] absolute inset-x-0 p-7 bottom-0 font-light text-2xl"
+            >
+              Cotton Seed Oil
+            </p>
+          </div>
+          <div class="relative aspect-square group overflow-hidden">
+            <img
+              src="/assets/products/spices.png"
+              class="w-full h-full object-cover group-hover:scale-110 transition-all"
+              alt="spices"
+            />
 
-          <div
-            class="absolute bg-gradient-to-t from-black to-transparent h-40 inset-x-0 bottom-0"
-          ></div>
-          <p
-            class="max-w-[60%] absolute inset-x-0 p-7 bottom-0 font-light text-2xl"
-          >
-            Agri PRODUCE
-          </p>
-        </div>
-        <div class="relative aspect-square group overflow-hidden">
-          <img
-            src="/assets/products/rice.png"
-            class="w-full h-full object-cover group-hover:scale-110 transition-all"
-            alt="rice"
-          />
+            <div
+              class="absolute bg-gradient-to-t from-black to-transparent h-40 inset-x-0 bottom-0"
+            ></div>
+            <p
+              class="max-w-[60%] absolute inset-x-0 p-7 bottom-0 font-light text-2xl"
+            >
+              Spices
+            </p>
+          </div>
+          <div class="relative aspect-square group overflow-hidden">
+            <img
+              src="/assets/products/agri-produce.png"
+              class="w-full h-full object-cover group-hover:scale-110 transition-all"
+              alt="agri-produce"
+            />
 
+            <div
+              class="absolute bg-gradient-to-t from-black to-transparent h-40 inset-x-0 bottom-0"
+            ></div>
+            <p
+              class="max-w-[60%] absolute inset-x-0 p-7 bottom-0 font-light text-2xl"
+            >
+              Agri PRODUCE
+            </p>
+          </div>
+          <div class="relative aspect-square group overflow-hidden">
+            <img
+              src="/assets/products/rice.png"
+              class="w-full h-full object-cover group-hover:scale-110 transition-all"
+              alt="rice"
+            />
+
+            <div
+              class="absolute bg-gradient-to-t from-black to-transparent h-40 inset-x-0 bottom-0"
+            ></div>
+            <p
+              class="max-w-[60%] absolute inset-x-0 p-7 bottom-0 font-light text-2xl"
+            >
+              Rice
+            </p>
+          </div>
           <div
-            class="absolute bg-gradient-to-t from-black to-transparent h-40 inset-x-0 bottom-0"
-          ></div>
-          <p
-            class="max-w-[60%] absolute inset-x-0 p-7 bottom-0 font-light text-2xl"
+            class="relative aspect-square bg-yellow-500 hover:bg-gray-500 transition-all"
           >
-            Rice
-          </p>
+            <div
+              class="absolute bg-gradient-to-t from-black to-transparent h-40 inset-x-0 bottom-0"
+            ></div>
+            <p
+              class="max-w-[60%] absolute inset-x-0 p-7 bottom-0 font-light text-2xl"
+            >
+              View All Our Products
+            </p>
+          </div>
         </div>
-        <div
-          class="relative aspect-square bg-yellow-500 hover:bg-gray-500 transition-all"
-        >
-          <div
-            class="absolute bg-gradient-to-t from-black to-transparent h-40 inset-x-0 bottom-0"
-          ></div>
-          <p
-            class="max-w-[60%] absolute inset-x-0 p-7 bottom-0 font-light text-2xl"
-          >
-            View All Our Products
-          </p>
+      </section>
+
+      <!-- BLOGS Section -->
+      <section class="max-w-7xl px-5 mx-auto flex flex-col gap-8 items-start">
+        <h3 class="text-5xl font-bold">Blogs</h3>
+        <div class="blog-grid-container">
+          <div class="blog-grid-item">
+            <div class="blog-overlay"></div>
+            <img
+              class="blog-img"
+              src="/assets/advaita-exports.jpg"
+              alt="Image 1"
+            />
+            <div class="blog-content">
+              <h3>The Importance of Cotton Quality in Textile Manufacturing</h3>
+              <button class="blog-read-more">Read more</button>
+            </div>
+          </div>
+          <div class="blog-grid-item">
+            <div class="blog-overlay"></div>
+            <img
+              class="blog-img"
+              src="/assets/advaita-product.jpg"
+              alt="Image 2"
+            />
+            <div class="blog-content">
+              <h3>
+                Exploring the Versatility of Combed Noil: Applications and
+                Benefits
+              </h3>
+              <button class="blog-read-more">Read more</button>
+            </div>
+          </div>
+          <div class="blog-grid-item">
+            <div class="blog-overlay"></div>
+            <img
+              class="blog-img"
+              src="/assets/advaita-purpose.jpg"
+              alt="Image 3"
+            />
+            <div class="blog-content">
+              <h3>
+                The Impact of Technological Advancements on Cotton Trading and
+                Textile Industry
+              </h3>
+              <button class="blog-read-more">Read more</button>
+            </div>
+          </div>
+          <div class="blog-grid-item">
+            <div class="blog-overlay"></div>
+            <img
+              class="blog-img"
+              src="/assets/advaita-exports.jpg"
+              alt="Image 4"
+            />
+            <div class="blog-content">
+              <h3>The Global Cotton Market: Trends and Forecast</h3>
+              <button class="blog-read-more">Read more</button>
+            </div>
+          </div>
         </div>
       </section>
 
       <!-- CONTACT Section -->
-      <div id="contact" class="bg-gray-700 text-white w-full py-10">
+      <div id="contact" class="bg-gray-700 px-5 text-white w-full py-10">
         <div class="max-w-7xl mx-auto flex gap-10 items-center">
           <div class="flex flex-col gap-5">
             <p class="text-3xl">Contact Us</p>
